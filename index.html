@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<nav>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+            <h1 style="margin-left: 60px;"> WEB DEVLOPER</h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PRICING</a></li>
+                <li><a href="">CONTACT</a></li>
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <!-- <span class="change-theme-name">Dark mode</span> -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+</nav>
+</header>
+</div>
+</ul>
+</div>
+
+
+</div>
+</nav>
+<div class="text-box">
+    <h1>CREATE YOUR FIRST<br> WEBSITE</h1>
+    <h3>Make your business shine on the web.</h3>
+    <button type="button" class="btn">KNOW MORE</button>
+</div>
+<div class="degine">
+    <h1>TEMPLATES</h1>
+    <div class="templates">
+        <ul>
+            <img src="img/1.webp" alt="" class="photo">
+            <img src="img/2.webp" alt="template1" class="smart">
+            <img src="img/4.avif" alt="template1" class="web">
+        </ul>
+    </div>
+</div>
+
+</body>
+<footer>
+
+    <div class="footer">
+        <div class="list">
+            <h4>IMORTANT LINKS</h4>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PRICING</a></li>
+                <li><a href="">CONTACTS</a></li>
+
+
+            </ul>
+        </div>
+        <div class="contact">
+            <h4>CONTACTS</h4>
+            <ul>
+                <li>PHONE:9075727511</li>
+                <li> EMAIL:abrar.bardolia@gmail.com</li>
+            </ul>
+        </div>
+        <div class="follow">
+            <h4>FOLLW US</h4>
+            <div class="social">
+                <ul>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+    <meta charset='UTF-8'>
+    <title>Search Bar Demo</title>
+
+
+    <body>
+        <form role="search" id="form">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+        </form>
+        <script>
+            const f = document.getElementById('form');
+            const q = document.getElementById('query');
+            const google = 'https://www.google.com/search?q=site%3A+';
+            const site = 'pagedart.com';
+
+            function submitted(event) {
+                event.preventDefault();
+                const url = google + site + '+' + q.value;
+                const win = window.open(url, '_blank');
+                win.focus();
+            }
+
+            f.addEventListener('submit', submitted);
+        </script>
+    </body>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+            
+            .sidenav {
+                width: 130px;
+                position: fixed;
+                z-index: 1;
+                top: 20px;
+                left: 10px;
+                background: rgb(65, 28, 28);
+                overflow-x: hidden;
+                padding: 8px 0;
+            }
+            
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #2196F3;
+                display: block;
+            }
+            
+            .sidenav a:hover {
+                color: #064579;
+            }
+            
+            .main {
+                margin-left: 140px;
+                /* Same width as the sidebar + left position in px */
+                font-size: 28px;
+                /* Increased text to enable scrolling */
+                padding: 0px 10px;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 115px;
+                }
+                .sidenav a {
+                    font-size: 118px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#Subscribe">Subscribe</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+
+
+
+        </div>
+
+    </body>
+
+</html>
+
+<!--==================== SUBSCRIBE ====================-->
+<section class="subscribe section">
+    <div class="subscribe__bg">
+        <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">Subscribe Our <br>First Website</h2>
+
+            <form action="" class="subscribe__form">
+                <input type="text" placeholder="Enter email" class="subscribe__input">
+                <!-- <button class="button">
+                    Subscribe -->
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+</a>
+
+<!--=============== SCROLL REVEAL===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== SWIPER JS ===============-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
